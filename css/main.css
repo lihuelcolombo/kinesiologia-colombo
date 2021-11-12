@@ -1,0 +1,385 @@
+/* FONTS Y BACKGROUND */
+body { font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    background-color: rgb(215, 239, 255);
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+#logo-index {
+    width: 60px;
+    height: 120px;
+    padding: auto;
+    vertical-align: bottom;
+}
+
+/* ==== NAVBAR ==== */
+
+.navbar-botones {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    text-transform: capitalize;
+    list-style-type: none;
+
+}
+
+.navbar-botones li a {
+    list-style-type: none;
+    color: #025197;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    list-style-type: none;
+    vertical-align: middle;
+    transition: all .35s ease-in-out;     
+
+}
+.navbar-botones li {
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px;    
+}
+
+.navbar-botones li a:hover {
+    transform: scale(1.2);    
+}
+
+/* BANNER INDEX */
+.banner {
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.banner img {
+    display: inline-block;   
+}
+
+h1 {
+    color: #025197;   
+}
+
+h2 {
+    color: #025197;
+}
+
+
+.servicios-about p {
+    color: #025197;
+}
+
+hr {
+    color: rgba(0, 0, 0, 0.219);
+   
+}
+/* ==== FOOTER ====  */
+
+
+
+.container-footer {
+    background-color: rgba(255, 255, 255, 0.068);
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    justify-content: space-between;
+
+
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: space-evenly;
+}
+
+.redes-sociales a {
+    display:inline-block;
+    font-size: 30px;
+    color: #025197;
+    text-align: center;
+    text-decoration: none;    
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: all .35s ease-in-out   
+
+}
+
+.redes-sociales a:hover {
+    scale: 110%;
+}
+
+.copyright {
+    color: #025197;
+    font-style: italic;
+    font-weight: lighter;
+    padding-right: 5%;
+}
+
+.privacidad {
+    color: #025197;
+    font-style: italic;
+    font-weight: lighter;
+    padding-left: 5%;
+}
+
+/* PAGE SERVICIOS */
+.servicios-grid-container {
+    
+    padding: 5px;
+    display: grid;
+    grid-template-areas: 
+    "s1 s2 foto-krok"
+    "s3 s4 foto-krok"
+    "s5 s6 foto-krok"
+    ;
+    row-gap: 15px;
+}
+
+.servicio-1 {
+    grid-area: s1;
+}
+.servicio-2 {
+    grid-area: s2;
+}
+.servicio-3 {
+    grid-area: s3;
+}
+.servicio-4 {
+    grid-area: s4;
+}
+.servicio-5 {
+    grid-area: s5;
+}
+.servicio-6 {
+    grid-area: s6;
+}
+
+.servicios-grid-container div {
+    background-color: rgba(0, 0, 0, 0.014);
+    padding: 3px;
+    border: solid;
+    border-color: rgba(0, 0, 0, 0.11);
+    border-radius: 5%;
+    margin: 5px 2px;
+    transition: all .35s ease-in-out;
+    
+}
+
+.servicios-grid-container div:hover {
+    background-color: rgba(0, 0, 0, 0.247);
+}
+
+.servicios-grid-container div h4 {
+    color: #025197
+}
+
+.servicios-grid-container div p {    
+    color: #025197    
+}
+
+.servicios-grid-container div p a {
+    text-decoration: none;
+    color: #025197;
+    font-weight: bold;
+}
+
+.grid-estructura {
+   display: grid;
+   grid-template-areas: 
+   "about about about"
+   "main main foto-krok"
+   "main main foto-krok"
+   ;
+   
+}
+
+
+.servicios-about {
+    grid-area: about;
+}
+
+.servicios-about h1 {
+    margin: 0px;
+    font-size: 4em;
+}
+
+.servicios-about p {
+    font-size: 2em;
+    margin: 5px;
+    padding-right: 25px;
+    text-align: justify;
+    color: #025197;
+    font-style: italic;
+}
+
+.servicios-grid-container {
+    grid-area: main;
+}
+
+.krok {
+    height: auto;
+    width: 500px;
+    padding: 10px 50px;    
+    grid-area: foto-krok;
+    border-radius: 10%;
+    align-items: baseline;
+    transition: all 0.3s ease-in-out
+}
+
+.krok:hover {
+    transform: scale(1.05);
+}
+
+/* ==== PAGE SOBRE MI ==== */
+
+.sobre-mi-container {
+    display:grid;
+    grid-template-areas: 
+    "titulo titulo foto"
+    "texto texto foto"
+    ;
+    line-height: 40px;
+    
+}
+
+.foto4x4 {
+    height: 500px;
+    width: 500px;
+    padding: 50px;
+    grid-area: foto;
+    border-radius: 20%;
+    transition: all 0.3s ease-in-out;
+}
+
+.foto4x4:hover {
+    transform: scale(1.05)
+}
+    
+
+.sobre-mi-container h1 {
+    grid-area: titulo;
+    font-size: 4em;
+    margin: 0px
+    ;
+}
+
+.sobre-mi-container p {
+    grid-area: texto;
+    font-size: 1.8em;
+    margin: 5px;
+    padding-right: 25px;
+    text-align: justify;
+    color: #025197;
+    font-style: italic;
+}
+
+/* ==== PAGE UBICACION ==== */
+
+
+.ubicacion-container {
+    display:grid;
+    grid-template-areas: 
+    "texto texto"
+    "datos-1 datos-2"
+    "mapa-1 mapa-2"    
+    ;
+    
+}
+
+.ubicacion-container h3 {
+    color: #025197;
+}
+
+.ubicacion-container span {
+    color: #025197;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.ubicacion-container p {
+    color: #025197;
+}
+
+.ubicacion-about h1 {
+    margin: 0px;
+    font-size: 4em;   
+}
+
+.ubicacion-about{
+    grid-area: texto;
+}
+
+.ubicacion-about p{
+    font-size: 1.8em;
+    text-align: justify;
+    color: #025197;
+    font-style: italic;
+}
+
+.ubicacion-datos-san-miguel {
+    grid-area: datos-1;
+    margin-left: 200px;    
+}
+
+.ubicacion-san-miguel {
+    grid-area: mapa-1;
+    margin-left: 200px;
+}
+
+.ubicacion-datos-florida {
+    grid-area: datos-2;
+}
+
+.ubicacion-florida {
+    grid-area: mapa-2;
+}
+
+
+/* ==== PAGE CONTACTO ==== */
+
+.contacto-about h1 {
+    grid-area: titulo;
+    font-size: 4em;
+    margin: 0px
+    ;
+}
+
+.contacto-about p {
+    grid-area: texto;
+    font-size: 1.8em;
+    margin: 5px;
+    padding-right: 25px;
+    text-align: justify;
+    color: #025197;
+    font-style: italic;
+}
+
+.foto-rodilla {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.7;
+    width: auto;
+    height: 800px;
+   
+}
+
+
