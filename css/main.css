@@ -65,7 +65,7 @@ body { font-family: 'Montserrat', sans-serif;
 }
 
 .banner img {
-    /* display: inline-block;    */
+    display: inline-block;       
 }
 
 h1 {
@@ -77,9 +77,7 @@ h2 {
 }
 
 
-.servicios-about p {
-    color: #025197;
-}
+
 
 hr {
     color: rgba(0, 0, 0, 0.219);
@@ -145,6 +143,10 @@ hr {
 }
 
 /* PAGE SERVICIOS */
+.servicios-about p {
+    color: #025197;
+}
+
 .servicios-grid-container {
     
     padding: 5px;
@@ -245,12 +247,9 @@ hr {
     grid-area: foto-krok;
     border-radius: 10%;
     align-items: baseline;
-    transition: all 0.3s ease-in-out
+    
 }
 
-.krok:hover {
-    transform: scale(1.05);
-}
 
 /* ==== PAGE SOBRE MI ==== */
 
@@ -267,15 +266,13 @@ hr {
 .foto4x4 {
     height: 500px;
     width: 500px;
-    padding: 50px;
+    margin: 50px;
     grid-area: foto;
-    border-radius: 20%;
+    border: solid 5px rgb(10, 10, 165);
     transition: all 0.3s ease-in-out;
 }
 
-.foto4x4:hover {
-    transform: scale(1.05)
-}
+
     
 
 .sobre-mi-container h1 {

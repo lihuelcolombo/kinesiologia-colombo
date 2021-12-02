@@ -1,0 +1,35 @@
+//Page Sobre mi
+
+.sobre-mi-container {
+    @include about-spacing;
+    min-height: 80vh;  
+    display:grid;
+    grid-template-areas: 
+    "titulo titulo foto"
+    "texto texto foto"
+    ;
+    line-height: 40px;
+    h1 {
+        grid-area: titulo;
+        font-size: 4em;
+        margin: 0px
+    }
+    p {
+        grid-area: texto;
+        font-size: 1.8em;
+        margin: 5px;
+        padding-right: 25px;
+        text-align: justify;
+        color: $color-primary;
+        font-style: italic;  
+    }
+}
+
+.foto4x4 {
+    height: 500px;
+    width: 500px;
+    margin: 50px;
+    grid-area: foto;
+    border-radius: 50%;
+    @include photo-border;
+}

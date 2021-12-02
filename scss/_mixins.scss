@@ -1,0 +1,15 @@
+// Mixins
+@mixin size {
+    padding: 5px;
+    margin: 5px;
+    border: 20px;
+    
+}
+
+@mixin about-spacing {
+    margin: 20px;
+}
+
+@mixin photo-border {
+    border: solid 6px $color-secondary
+}

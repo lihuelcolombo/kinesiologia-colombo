@@ -1,0 +1,17 @@
+
+// Body, Fonts y Background
+body { font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    min-height: 100%;
+    position: relative;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    h1 {
+        color: $color-primary;
+    } 
+    h2 {
+        color: $color-primary;
+    }
+}

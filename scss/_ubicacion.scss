@@ -1,0 +1,60 @@
+// Page Ubicación
+.ubicacion-container {
+    display:grid;
+    grid-template-areas: 
+    "texto texto"
+    "datos-1 datos-2"
+    "mapa-1 mapa-2"    
+    ;
+    h3 {
+        color: $color-primary;
+    }
+    span {
+        color: $color-primary;
+        font-style: italic;
+        font-weight: lighter;
+    }
+    p {
+        color: $color-primary;
+    }
+}
+
+.ubicacion-about {
+    @include about-spacing;
+    grid-area: texto;
+    h1 {
+        margin: 0px;
+        font-size: 4em;
+    }
+    p {
+        color: $color-primary;
+        font-size: 1.8em;
+        text-align: justify;
+        font-style: italic;
+
+    }
+}
+
+.ubicacion-datos-san-miguel {
+    grid-area: datos-1;
+    margin-left: 200px;
+        
+}
+
+.ubicacion-san-miguel {
+    grid-area: mapa-1;
+    margin-left: 200px;
+    
+    
+}
+
+.ubicacion-datos-florida {
+    grid-area: datos-2;
+}
+
+.ubicacion-florida {
+    grid-area: mapa-2;
+    
+    
+    
+}

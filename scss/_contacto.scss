@@ -1,0 +1,29 @@
+// Page Contacto
+
+.contacto-about {
+    @include about-spacing;
+    h1 { grid-area: titulo;
+        font-size: 4em;
+        margin: 0px    ;
+    }
+    p {
+        grid-area: texto;
+        font-size: 1.8em;
+        margin: 5px;
+        padding-right: 25px;
+        text-align: justify;
+        color: $color-primary;
+        font-style: italic;
+    }
+}
+
+
+.foto-rodilla {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.7;
+    width: auto;
+    height: 800px;
+   
+}

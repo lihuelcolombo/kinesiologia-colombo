@@ -1,0 +1,46 @@
+// Footer
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+    
+    
+}
+
+
+.redes-sociales {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    justify-content:space-evenly;
+    a {
+    font-size: 30px;
+    color: $color-primary;   
+    text-decoration: none;       
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all .35s ease-in-out;    
+    }
+    a:hover {
+        transform: scale(1.2);
+        }
+}
+
+.copyright {
+    color: $color-primary;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: end; 
+}
+
+.privacidad {
+    margin-top: 10px;
+    color: $color-primary;
+    font-style: italic;
+    font-weight: lighter;
+    text-align:start;
+}

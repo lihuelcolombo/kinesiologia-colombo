@@ -1,0 +1,106 @@
+// Page Servicios
+.grid-estructura {
+    display: grid;
+    grid-template-areas: 
+    "about about about"
+    "main main foto-krok"
+    "main main foto-krok"
+    ;
+    
+ }
+
+.servicios-about {
+    grid-area: about;    
+    @include about-spacing;
+    p {
+        color: $color-primary;
+        font-size: 2em;
+        margin: 5px;
+        padding-right: 25px;
+        text-align: justify;        
+        font-style: italic;
+    }
+    h1 {
+        margin: 0px;
+        font-size: 4em;
+    }
+}
+.servicios-grid-container {    
+    grid-area: main;
+    padding: 5px;
+    display: grid;
+    grid-template-areas: 
+    "s1 s2 foto-krok"
+    "s3 s4 foto-krok"
+    "s5 s6 foto-krok"
+    ;
+    row-gap: 15px;
+    div {
+        background-color: rgba(0, 0, 0, 0.014);
+        padding: 15px;
+        border: solid;
+        border-color: $color-secondary;
+        border-radius: 5%;
+        margin: 10px 5px;
+        transition: all .35s ease-in-out;        
+        h4 {
+            color: $color-primary;
+        }
+        p {
+            color: $color-primary;
+            a {
+                text-decoration: none;
+                color: $color-primary;
+                font-weight: bold;  
+            }
+        }  
+    }
+    div:hover {
+        background-color: rgba(0, 0, 0, 0.247);
+    }
+    img {
+        @include photo-border; 
+        margin: 10px 50px;
+        height: auto;
+        width: 500px;           
+        grid-area: foto-krok;    
+        align-items: baseline;  
+    }
+}
+
+
+.servicio-1 {
+    grid-area: s1;
+    @include size;
+    
+}
+.servicio-2 {
+    grid-area: s2;
+    @include size;
+
+}
+.servicio-3 {
+    grid-area: s3;
+    @include size;
+
+}
+.servicio-4 {
+    grid-area: s4;
+    @include size;
+
+}
+.servicio-5 {
+    grid-area: s5;
+    @include size;
+
+}
+.servicio-6 {
+    grid-area: s6;
+    @include size;
+
+}
+
+
+
+
+

@@ -1,0 +1,22 @@
+/* Media Queries */
+
+@media (max-width:768px){
+    .banner {
+        display:none;
+    }
+    .sobre-mi-container img {
+        display: none;
+    }
+    .foto-rodilla {
+        display: none;
+    }
+    .krok {
+        display: none;
+    }
+    .ubicacion-florida {
+        display: none;
+    }
+    .ubicacion-san-miguel {
+        display: none;
+    }
+}

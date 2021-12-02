@@ -1,0 +1,284 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  min-height: 100%;
+  position: relative;
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+  body h1 {
+    color: #025197; }
+  body h2 {
+    color: #025197; }
+
+#logo-index {
+  width: 60px;
+  height: 120px;
+  padding: auto;
+  vertical-align: bottom; }
+
+.navbar {
+  background-color: #cdeafd; }
+
+.nav-item a {
+  color: #025197 !important; }
+
+.navbar-botones {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  list-style-type: none; }
+  .navbar-botones li {
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px; }
+    .navbar-botones li a {
+      list-style-type: none;
+      color: #025197;
+      display: inline-block;
+      text-decoration: none;
+      font-size: 15px;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      text-transform: uppercase;
+      list-style-type: none;
+      transition: all .35s ease-in-out; }
+    .navbar-botones li a:hover {
+      transform: scale(1.2); }
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%; }
+
+.redes-sociales {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly; }
+  .redes-sociales a {
+    font-size: 30px;
+    color: #025197;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all .35s ease-in-out; }
+  .redes-sociales a:hover {
+    transform: scale(1.2); }
+
+.copyright {
+  color: #025197;
+  margin-top: 10px;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: end; }
+
+.privacidad {
+  margin-top: 10px;
+  color: #025197;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: start; }
+
+.banner {
+  margin-left: 0px !important;
+  padding-left: 0px !important; }
+  .banner img {
+    display: inline-block;
+    height: auto; }
+
+.sobre-mi-container {
+  margin: 20px;
+  min-height: 80vh;
+  display: grid;
+  grid-template-areas: "titulo titulo foto" "texto texto foto";
+  line-height: 40px; }
+  .sobre-mi-container h1 {
+    grid-area: titulo;
+    font-size: 4em;
+    margin: 0px; }
+  .sobre-mi-container p {
+    grid-area: texto;
+    font-size: 1.8em;
+    margin: 5px;
+    padding-right: 25px;
+    text-align: justify;
+    color: #025197;
+    font-style: italic; }
+
+.foto4x4 {
+  height: 500px;
+  width: 500px;
+  margin: 50px;
+  grid-area: foto;
+  border-radius: 50%;
+  border: solid 6px #d7efff; }
+
+.grid-estructura {
+  display: grid;
+  grid-template-areas: "about about about" "main main foto-krok" "main main foto-krok"; }
+
+.servicios-about {
+  grid-area: about;
+  margin: 20px; }
+  .servicios-about p {
+    color: #025197;
+    font-size: 2em;
+    margin: 5px;
+    padding-right: 25px;
+    text-align: justify;
+    font-style: italic; }
+  .servicios-about h1 {
+    margin: 0px;
+    font-size: 4em; }
+
+.servicios-grid-container {
+  grid-area: main;
+  padding: 5px;
+  display: grid;
+  grid-template-areas: "s1 s2 foto-krok" "s3 s4 foto-krok" "s5 s6 foto-krok";
+  row-gap: 15px; }
+  .servicios-grid-container div {
+    background-color: rgba(0, 0, 0, 0.014);
+    padding: 15px;
+    border: solid;
+    border-color: #d7efff;
+    border-radius: 5%;
+    margin: 10px 5px;
+    transition: all .35s ease-in-out; }
+    .servicios-grid-container div h4 {
+      color: #025197; }
+    .servicios-grid-container div p {
+      color: #025197; }
+      .servicios-grid-container div p a {
+        text-decoration: none;
+        color: #025197;
+        font-weight: bold; }
+  .servicios-grid-container div:hover {
+    background-color: rgba(0, 0, 0, 0.247); }
+  .servicios-grid-container img {
+    border: solid 6px #d7efff;
+    margin: 10px 50px;
+    height: auto;
+    width: 500px;
+    grid-area: foto-krok;
+    align-items: baseline; }
+
+.servicio-1 {
+  grid-area: s1;
+  padding: 5px;
+  margin: 5px;
+  border: 20px; }
+
+.servicio-2 {
+  grid-area: s2;
+  padding: 5px;
+  margin: 5px;
+  border: 20px; }
+
+.servicio-3 {
+  grid-area: s3;
+  padding: 5px;
+  margin: 5px;
+  border: 20px; }
+
+.servicio-4 {
+  grid-area: s4;
+  padding: 5px;
+  margin: 5px;
+  border: 20px; }
+
+.servicio-5 {
+  grid-area: s5;
+  padding: 5px;
+  margin: 5px;
+  border: 20px; }
+
+.servicio-6 {
+  grid-area: s6;
+  padding: 5px;
+  margin: 5px;
+  border: 20px; }
+
+.ubicacion-container {
+  display: grid;
+  grid-template-areas: "texto texto" "datos-1 datos-2" "mapa-1 mapa-2"; }
+  .ubicacion-container h3 {
+    color: #025197; }
+  .ubicacion-container span {
+    color: #025197;
+    font-style: italic;
+    font-weight: lighter; }
+  .ubicacion-container p {
+    color: #025197; }
+
+.ubicacion-about {
+  margin: 20px;
+  grid-area: texto; }
+  .ubicacion-about h1 {
+    margin: 0px;
+    font-size: 4em; }
+  .ubicacion-about p {
+    color: #025197;
+    font-size: 1.8em;
+    text-align: justify;
+    font-style: italic; }
+
+.ubicacion-datos-san-miguel {
+  grid-area: datos-1;
+  margin-left: 200px; }
+
+.ubicacion-san-miguel {
+  grid-area: mapa-1;
+  margin-left: 200px; }
+
+.ubicacion-datos-florida {
+  grid-area: datos-2; }
+
+.ubicacion-florida {
+  grid-area: mapa-2; }
+
+.contacto-about {
+  margin: 20px; }
+  .contacto-about h1 {
+    grid-area: titulo;
+    font-size: 4em;
+    margin: 0px; }
+  .contacto-about p {
+    grid-area: texto;
+    font-size: 1.8em;
+    margin: 5px;
+    padding-right: 25px;
+    text-align: justify;
+    color: #025197;
+    font-style: italic; }
+
+.foto-rodilla {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.7;
+  width: auto;
+  height: 800px; }
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .banner {
+    display: none; }
+  .sobre-mi-container img {
+    display: none; }
+  .foto-rodilla {
+    display: none; }
+  .krok {
+    display: none; }
+  .ubicacion-florida {
+    display: none; }
+  .ubicacion-san-miguel {
+    display: none; } }
