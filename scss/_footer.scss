@@ -2,10 +2,8 @@
 footer {
     position: relative;
     bottom: 0;
-    width: 100%;
-    
-    
-    
+    left: 0;
+    width: 100%; 
 }
 
 
@@ -34,13 +32,13 @@ footer {
     margin-top: 10px;
     font-style: italic;
     font-weight: lighter;
-    text-align: end; 
+    text-align: center; 
 }
 
 .privacidad {
-    margin-top: 10px;
     color: $color-primary;
+    margin-top: 10px;
     font-style: italic;
     font-weight: lighter;
-    text-align:start;
+    text-align:center;
 }

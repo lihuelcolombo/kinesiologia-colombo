@@ -2,28 +2,30 @@
 
 .contacto-about {
     @include about-spacing;
-    h1 { grid-area: titulo;
-        font-size: 4em;
-        margin: 0px    ;
-    }
+    
     p {
-        grid-area: texto;
-        font-size: 1.8em;
-        margin: 5px;
-        padding-right: 25px;
-        text-align: justify;
-        color: $color-primary;
-        font-style: italic;
+        @include parrafos-about;               
     }
 }
 
-
-.foto-rodilla {
+.contacto-container {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0.7;
-    width: auto;
-    height: 800px;
-   
+    background-image: url(../public/img/rodilla.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    min-height: 70vh;
+    .mb-3 {    
+     
+    justify-content: center;
+    text-align: center;         
+    }
+    
+    
+    
 }
+
+
+
+
+

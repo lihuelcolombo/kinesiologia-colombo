@@ -2,14 +2,31 @@
 @mixin size {
     padding: 5px;
     margin: 5px;
-    border: 20px;
-    
+    border: 20px;    
 }
-
+// Espaciados de titulo y párrafo
 @mixin about-spacing {
-    margin: 20px;
+    margin: 20px;   
+}
+// Parrafos bajo el título
+@mixin parrafos-about {
+    color: $color-primary;    
+    font-size: 1.7em;
+    text-align: justify;
+    font-style: italic;
+    padding-top: 20px;    
 }
 
+// Bordes de img 
 @mixin photo-border {
     border: solid 6px $color-secondary
+}
+
+
+@mixin ubicacion-contenedores {
+    background-color: rgba(0, 0, 0, 0.014);
+    min-height: 60vh;
+    margin: 10px;
+    transition: all .35s ease-in-out; 
+    padding: 30px 0px
 }

@@ -2,34 +2,45 @@
 
 .sobre-mi-container {
     @include about-spacing;
+    height: 100%;
     min-height: 80vh;  
     display:grid;
     grid-template-areas: 
     "titulo titulo foto"
     "texto texto foto"
-    ;
-    line-height: 40px;
+    ;    
     h1 {
         grid-area: titulo;
         font-size: 4em;
-        margin: 0px
+        margin: 0px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
     }
     p {
         grid-area: texto;
         font-size: 1.8em;
-        margin: 5px;
+        margin: 5px;        
         padding-right: 25px;
         text-align: justify;
         color: $color-primary;
-        font-style: italic;  
-    }
+        font-style: italic;
+        line-height: 50px;
+    }    
 }
 
 .foto4x4 {
-    height: 500px;
-    width: 500px;
-    margin: 50px;
-    grid-area: foto;
-    border-radius: 50%;
-    @include photo-border;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    grid-area: foto;    
+    img{
+        // height: 500px;
+        // width: 500px;
+        margin: 50px;
+        border-radius: 50%;
+        @include photo-border;
+    }
 }

@@ -10,6 +10,12 @@ body { font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     h1 {
         color: $color-primary;
+        margin: 0px;
+        font-size: 4em;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     } 
     h2 {
         color: $color-primary;

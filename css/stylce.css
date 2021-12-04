@@ -8,7 +8,13 @@ body {
   padding: 0px;
   box-sizing: border-box; }
   body h1 {
-    color: #025197; }
+    color: #025197;
+    margin: 0px;
+    font-size: 4em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   body h2 {
     color: #025197; }
 
@@ -18,42 +24,42 @@ body {
   padding: auto;
   vertical-align: bottom; }
 
+.navbar-brand {
+  transition: all .35s ease-in-out; }
+
+.navbar-brand:hover {
+  transform: scale(1.2); }
+
 .navbar {
   background-color: #cdeafd; }
 
 .nav-item a {
   color: #025197 !important; }
 
-.navbar-botones {
+.navbar-botones li {
   display: inline-block;
-  text-decoration: none;
-  font-size: 15px;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  list-style-type: none; }
-  .navbar-botones li {
+  padding-left: 50px;
+  padding-right: 50px; }
+  .navbar-botones li a {
+    list-style-type: none;
+    color: #025197;
     display: inline-block;
-    padding-left: 50px;
-    padding-right: 50px; }
-    .navbar-botones li a {
-      list-style-type: none;
-      color: #025197;
-      display: inline-block;
-      text-decoration: none;
-      font-size: 15px;
-      text-align: center;
-      width: 100%;
-      height: 100%;
-      text-transform: uppercase;
-      list-style-type: none;
-      transition: all .35s ease-in-out; }
-    .navbar-botones li a:hover {
-      transform: scale(1.2); }
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    list-style-type: none;
+    transition: all .35s ease-in-out; }
+  .navbar-botones li a:hover {
+    transform: scale(1.2); }
 
 footer {
   position: relative;
   bottom: 0;
+  left: 0;
   width: 100%; }
 
 .redes-sociales {
@@ -78,32 +84,38 @@ footer {
   margin-top: 10px;
   font-style: italic;
   font-weight: lighter;
-  text-align: end; }
+  text-align: center; }
 
 .privacidad {
-  margin-top: 10px;
   color: #025197;
+  margin-top: 10px;
   font-style: italic;
   font-weight: lighter;
-  text-align: start; }
+  text-align: center; }
 
 .banner {
   margin-left: 0px !important;
   padding-left: 0px !important; }
   .banner img {
     display: inline-block;
-    height: auto; }
+    overflow: hidden;
+    min-width: 100%;
+    object-fit: cover; }
 
 .sobre-mi-container {
   margin: 20px;
+  height: 100%;
   min-height: 80vh;
   display: grid;
-  grid-template-areas: "titulo titulo foto" "texto texto foto";
-  line-height: 40px; }
+  grid-template-areas: "titulo titulo foto" "texto texto foto"; }
   .sobre-mi-container h1 {
     grid-area: titulo;
     font-size: 4em;
-    margin: 0px; }
+    margin: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .sobre-mi-container p {
     grid-area: texto;
     font-size: 1.8em;
@@ -111,15 +123,18 @@ footer {
     padding-right: 25px;
     text-align: justify;
     color: #025197;
-    font-style: italic; }
+    font-style: italic;
+    line-height: 50px; }
 
 .foto4x4 {
-  height: 500px;
-  width: 500px;
-  margin: 50px;
-  grid-area: foto;
-  border-radius: 50%;
-  border: solid 6px #d7efff; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: foto; }
+  .foto4x4 img {
+    margin: 50px;
+    border-radius: 50%;
+    border: solid 6px #d7efff; }
 
 .grid-estructura {
   display: grid;
@@ -130,14 +145,13 @@ footer {
   margin: 20px; }
   .servicios-about p {
     color: #025197;
-    font-size: 2em;
-    margin: 5px;
-    padding-right: 25px;
+    font-size: 1.7em;
     text-align: justify;
-    font-style: italic; }
-  .servicios-about h1 {
-    margin: 0px;
-    font-size: 4em; }
+    font-style: italic;
+    padding-top: 20px;
+    margin: 5px;
+    padding-top: 20px;
+    padding-right: 25px; }
 
 .servicios-grid-container {
   grid-area: main;
@@ -148,9 +162,7 @@ footer {
   .servicios-grid-container div {
     background-color: rgba(0, 0, 0, 0.014);
     padding: 15px;
-    border: solid;
-    border-color: #d7efff;
-    border-radius: 5%;
+    border: solid 6px #d7efff;
     margin: 10px 5px;
     transition: all .35s ease-in-out; }
     .servicios-grid-container div h4 {
@@ -222,63 +234,83 @@ footer {
 .ubicacion-about {
   margin: 20px;
   grid-area: texto; }
-  .ubicacion-about h1 {
-    margin: 0px;
-    font-size: 4em; }
   .ubicacion-about p {
     color: #025197;
-    font-size: 1.8em;
+    font-size: 1.7em;
     text-align: justify;
-    font-style: italic; }
+    font-style: italic;
+    padding-top: 20px; }
+
+.contenedor-san-miguel {
+  background-color: rgba(0, 0, 0, 0.014);
+  min-height: 60vh;
+  margin: 10px;
+  transition: all .35s ease-in-out;
+  padding: 30px 0px;
+  border: solid 6px #d7efff; }
+
+.contenedor-san-miguel:hover {
+  background-color: rgba(0, 0, 0, 0.247); }
 
 .ubicacion-datos-san-miguel {
   grid-area: datos-1;
-  margin-left: 200px; }
+  text-align: center;
+  z-index: 10; }
 
 .ubicacion-san-miguel {
   grid-area: mapa-1;
-  margin-left: 200px; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.contenedor-florida {
+  background-color: rgba(0, 0, 0, 0.014);
+  min-height: 60vh;
+  margin: 10px;
+  transition: all .35s ease-in-out;
+  padding: 30px 0px;
+  border: solid 6px #d7efff; }
+
+.contenedor-florida:hover {
+  background-color: rgba(0, 0, 0, 0.247); }
 
 .ubicacion-datos-florida {
-  grid-area: datos-2; }
+  grid-area: datos-2;
+  text-align: center; }
 
 .ubicacion-florida {
-  grid-area: mapa-2; }
+  grid-area: mapa-2;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .contacto-about {
   margin: 20px; }
-  .contacto-about h1 {
-    grid-area: titulo;
-    font-size: 4em;
-    margin: 0px; }
   .contacto-about p {
-    grid-area: texto;
-    font-size: 1.8em;
-    margin: 5px;
-    padding-right: 25px;
-    text-align: justify;
     color: #025197;
-    font-style: italic; }
+    font-size: 1.7em;
+    text-align: justify;
+    font-style: italic;
+    padding-top: 20px; }
 
-.foto-rodilla {
+.contacto-container {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  opacity: 0.7;
-  width: auto;
-  height: 800px; }
+  background-image: url(../public/img/rodilla.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  min-height: 70vh; }
+  .contacto-container .mb-3 {
+    justify-content: center;
+    text-align: center; }
 
 /* Media Queries */
 @media (max-width: 768px) {
-  .banner {
-    display: none; }
-  .sobre-mi-container img {
-    display: none; }
-  .foto-rodilla {
-    display: none; }
+  footer {
+    position: fixed; }
   .krok {
     display: none; }
-  .ubicacion-florida {
-    display: none; }
   .ubicacion-san-miguel {
+    display: none; }
+  .ubicacion-florida {
     display: none; } }
