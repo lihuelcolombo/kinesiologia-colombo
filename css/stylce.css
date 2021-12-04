@@ -26,9 +26,8 @@ body {
 
 .navbar-brand {
   transition: all .35s ease-in-out; }
-
-.navbar-brand:hover {
-  transform: scale(1.2); }
+  .navbar-brand:hover {
+    transform: scale(1.2); }
 
 .navbar {
   background-color: #cdeafd; }
@@ -53,8 +52,8 @@ body {
     text-transform: uppercase;
     list-style-type: none;
     transition: all .35s ease-in-out; }
-  .navbar-botones li a:hover {
-    transform: scale(1.2); }
+    .navbar-botones li a:hover {
+      transform: scale(1.2); }
 
 footer {
   position: relative;
@@ -76,8 +75,8 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
     transition: all .35s ease-in-out; }
-  .redes-sociales a:hover {
-    transform: scale(1.2); }
+    .redes-sociales a:hover {
+      transform: scale(1.2); }
 
 .copyright {
   color: #025197;

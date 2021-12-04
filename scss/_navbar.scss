@@ -9,10 +9,11 @@
 
 .navbar-brand {
     transition: all .35s ease-in-out;
+    &:hover {
+        transform: scale(1.2);
+    }
 }
-.navbar-brand:hover {
-    transform: scale(1.2);
-}
+
 
 .navbar {
     background-color:rgb(205, 234, 253)
@@ -38,11 +39,12 @@
         height: 100%;
         text-transform: uppercase;
         list-style-type: none;    
-        transition: all .35s ease-in-out;                 
-        }                
-        a:hover {
+        transition: all .35s ease-in-out;
+        &:hover {
             transform: scale(1.2);
-        }
+            }                 
+        }                
+        
     }      
 }
 

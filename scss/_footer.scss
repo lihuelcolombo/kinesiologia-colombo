@@ -20,11 +20,12 @@ footer {
     margin-right: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
-    transition: all .35s ease-in-out;    
-    }
-    a:hover {
+    transition: all .35s ease-in-out;
+    &:hover {
         transform: scale(1.2);
-        }
+    }    
+    }
+   
 }
 
 .copyright {
