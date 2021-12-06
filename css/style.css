@@ -216,21 +216,19 @@ footer {
     min-height: auto;
     margin-bottom: 0px; } }
 
-.ubicacion-container {
-  display: grid;
-  grid-template-areas: "texto texto" "datos-1 datos-2" "mapa-1 mapa-2"; }
-  .ubicacion-container h3 {
-    color: #025197; }
-  .ubicacion-container span {
-    color: #025197;
-    font-style: italic;
-    font-weight: lighter; }
-  .ubicacion-container p {
-    color: #025197; }
+.ubicacion-container h3 {
+  color: #025197; }
+
+.ubicacion-container span {
+  color: #025197;
+  font-style: italic;
+  font-weight: lighter; }
+
+.ubicacion-container p {
+  color: #025197; }
 
 .ubicacion-about {
-  margin-top: 20px;
-  grid-area: texto; }
+  margin-top: 20px; }
   .ubicacion-about p {
     color: #025197;
     font-size: 1.7em;
@@ -244,18 +242,17 @@ footer {
   margin: 10px;
   transition: all .35s ease-in-out;
   padding: 30px 0px;
-  border: solid 6px #d7efff; }
+  border: solid 6px #d7efff;
+  margin-bottom: 50px; }
 
 .contenedor-san-miguel:hover {
   background-color: rgba(0, 0, 0, 0.247); }
 
 .ubicacion-datos-san-miguel {
-  grid-area: datos-1;
   text-align: center;
   z-index: 10; }
 
 .ubicacion-san-miguel {
-  grid-area: mapa-1;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -266,20 +263,23 @@ footer {
   margin: 10px;
   transition: all .35s ease-in-out;
   padding: 30px 0px;
-  border: solid 6px #d7efff; }
+  border: solid 6px #d7efff;
+  margin-bottom: 50px; }
 
 .contenedor-florida:hover {
   background-color: rgba(0, 0, 0, 0.247); }
 
 .ubicacion-datos-florida {
-  grid-area: datos-2;
   text-align: center; }
 
 .ubicacion-florida {
-  grid-area: mapa-2;
   display: flex;
   justify-content: center;
   align-items: center; }
+
+@media (max-width: 768) {
+  .ubicacion-container {
+    margin-bottom: 500 px !important; } }
 
 .contacto-about {
   margin-top: 20px; }
@@ -292,14 +292,12 @@ footer {
 
 .contacto-container {
   display: block;
-  background-image: url(../public/img/rodilla.jpg);
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: bottom;
   min-height: 70vh; }
   .contacto-container .mb-3 {
     justify-content: center;
-    text-align: center; }
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #025197; }
 
 /* Media Queries */
 @media (max-width: 768px) {

@@ -1,12 +1,6 @@
 // Page Ubicación
 .ubicacion-container {
-    display:grid;
-    grid-template-areas: 
-    "texto texto"
-    "datos-1 datos-2"
-    "mapa-1 mapa-2"    
-    ;
-    h3 {
+     h3 {
         color: $color-primary;
         
     }
@@ -21,9 +15,7 @@
 }
 
 .ubicacion-about {
-    @include about-spacing;
-    grid-area: texto;
-
+    @include about-spacing;   
     p {
     @include parrafos-about;
     }
@@ -32,49 +24,47 @@
 .contenedor-san-miguel {
     @include ubicacion-contenedores;
     @include photo-border;
-    
-    
-    
+    margin-bottom: 50px;   
 }
 .contenedor-san-miguel:hover {
     background-color: rgba(0, 0, 0, 0.247);
 }
 
 .ubicacion-datos-san-miguel {    
-    grid-area: datos-1;
     text-align: center;
     z-index: 10;
     
         
 }
 
-.ubicacion-san-miguel {
-    grid-area: mapa-1;
+.ubicacion-san-miguel {    
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
-    
 }
 
 .contenedor-florida {    
     @include ubicacion-contenedores;
     @include photo-border;    
+    margin-bottom: 50px;
 }
 
 .contenedor-florida:hover {
     background-color: rgba(0, 0, 0, 0.247);
 }
 
-.ubicacion-datos-florida {
-    grid-area: datos-2;
+.ubicacion-datos-florida {    
     text-align: center;
 }
 
-.ubicacion-florida {
-    grid-area: mapa-2;
+.ubicacion-florida {    
     display: flex;
     justify-content: center;
     align-items: center;    
+}
+
+@media (max-width: 768){
+    .ubicacion-container {
+        margin-bottom: 500 px !important; 
+    }
 }
