@@ -6,9 +6,9 @@
 }
 // Espaciados de titulo y párrafo
 @mixin about-spacing {
-    margin: 20px;   
+    margin-top: 20px;   
 }
-// Parrafos bajo el título
+// Parrafos bajo el título h1
 @mixin parrafos-about {
     color: $color-primary;    
     font-size: 1.7em;

@@ -2,11 +2,51 @@
 .banner {
     margin-left: 0px !important;
     padding-left: 0px !important;
-    img {
+    .banner-hor {
     display: inline-block;       
     overflow: hidden;
-    min-width: 100%;
+    min-width: 100% !important;
+    min-height: 80vh !important;
+    background-color: $color-secondary;
     object-fit: cover;
-
     }
+    .banner-vert {
+        display: none;
+    }
+}
+.main-index {
+    background-color: $color-secondary;
+}
+
+
+@media (max-width: 768px) {
+    .banner {
+        height: max-content;
+        padding-bottom: 90px;
+    }    
+    .banner-hor {
+        display: none !important;
+    }
+    .banner-vert {
+        display: inline-block !important;
+        height: 100%;
+        width: auto;
+        
+    }    
+}
+
+@media (max-width: 992px) {
+    .banner {
+        height: max-content;
+        padding-bottom: 90px;
+    }    
+    .banner-hor {
+        display: none !important;
+    }
+    .banner-vert {
+        display: inline-block !important;
+        height: auto;
+        width: 100%;
+        
+    }    
 }

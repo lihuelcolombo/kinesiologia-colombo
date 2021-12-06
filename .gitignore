@@ -1,5 +1,5 @@
 # ==== Archivos y directorios a excluir de GitHub ====
-node_modules
-
-
-
+node_modules/
+index-BACKUP.html
+_servicios-BACKUP.scss
+_sobre-mi-BACKUP.scss

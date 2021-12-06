@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="../css/stylce.css">
+    <link rel="stylesheet" href="../css/style.css">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,89 +30,69 @@
 <body>
     <header>
         <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-botones">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"> <img src="../public/img/logo.png" alt="logo" width="30" height="auto">  </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="../index.html"><img src="../public/img/logo.png" alt="logo" width="30" height="auto"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="sobre-mi.html">Sobre mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="ubicacion.html">Ubicación</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
-                    </li>                        
-                </ul>            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">                
+                    <a class="nav-link" href="../index.html">Home</a>
+                    <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                    <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+                    <a class="nav-link" href="contacto.html">Contacto</a>                
+                </div>
             </div>
             </div>
         </nav>
     </header> 
-        <div class="container grid-estructura">                        
-
-            <!-- ===== MAIN ===== -->
-            <main>
-            <div class="servicios-about">
-                <div class="row">
-                    <div class="col-12">
-                        <h1>Servicios</h1>
-                        <p>Consultá aquí la variedad de servicios y propuestas disponibles, y seleccioná la que mejor se adapte a tu situación y posibilidades.</p>
-                    </div>
-                </div>              
-        
+        <div class="container servicios-container">                        
+            <div class="row">
+                <div class="col-12 servicios-about">
+                    <h1>Servicios</h1>
+                    <p>Consultá aquí la variedad de servicios y propuestas disponibles, y seleccioná la que mejor se adapte a tu situación y posibilidades.</p>
+                </div>
             </div>
-                
-            <!-- ==== LISTADO DE SERVICIOS ==== -->
-        
-            <div class="row servicios-grid-container">
-                <div class="col-12">
-                    <div class="servicio-1">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ajuste-columna">
+                    <div class="servicio">
                         <h4>Atención en consultorios</h4>
                         <p>Podés atenderte conmigo en los consultorios ubicados en San Miguel (días lunes, miércoles y viernes) o en Florida (días martes y jueves). Para más información, visitá la sección <a href="ubicacion.html">ubicación</a>.</p>
                     </div>
-                    <div class="servicio-2">
-                        <h4>Atención a domicilio</h4>
-                        <p>Disponible únicamente en algunos puntos de CABA. No dudes en consultar!</p>
-                    </div>
-                    <div class="servicio-3">
+                    <div class="servicio">
                         <h4>Telerehabilitación / Tratamiento a distancia</h4>
                         <p>Desde cualquier parte del mundo! Consiste en una entrevista inicial por videollamada. Posteriormente recibirás un plan de tratamiento personalizado de 15 días, incluyendo ejercicios para realizar en el hogar/gimnasio/parque, pautas de cuidados, y seguimiento online del tratamiento y evolución.</p>
                     </div>
-                    <div class="servicio-4">
+                    <div class="servicio">
                         <h4>Trabajo de campo</h4>
                         <p>Terminadas las sesiones en consultorio, y previo a la vuelta al deporte, realizamos trabajos de campo para pulir los últimos detalles y que te encuentres en forma óptima antes de la vuelta a la competencia.</p>
                     </div>
-                    <div class="servicio-5">
-                        <h4>MEP Sport</h4>
-                        <p>La Micro Electrólisis Percutánea (MEP) consiste en la aplicación de una corriente galvánica en el orden de microamperios, en forma percutánea (con una aguja de acupuntura) con el fin de generar, entre otros efectos: Analgesia, Regeneración del tejido y Normalización del pH local. Ideal para tendinopatías y desgarros, entre otros usos.</p>
-                    </div>
-                    <div class="servicio-6">
-                        <h4>Taping Neuromuscular</h4>
-                        <p>Vendaje funcional que comenzó siendo utilizado en el ámbito deportivo pero en los ultimos años se popularizó y expandió al público en general para tratar diversas patologías y lesiones. 
-                        </p>
-                    </div>     
-                    
-                    <!-- ==== IMAGEN KROK ==== -->
-                <img class="img-fluid krok" src="../public/img/krok.jpg" alt="krok"> 
                 </div>
-            </div>
-        </main>
-        
-
-
-
-        
-        
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ajuste-columna">
+                    <div class="servicio">
+                        <h4>Atención a domicilio</h4>
+                        <p>Sujeto a disponibilidad geógrafica. Se realiza únicamente en algunos puntos de CABA. La sesión dura 45 minutos y los honorarios varían dependiendo de la localización. No dudes en consultar!</p>
+                    </div>
+                    
+                    <div class="servicio">
+                        <h4>MEP Sport</h4>
+                        <p>La Micro Electrólisis Percutánea (MEP) consiste en la aplicación de una corriente galvánica en el orden de microamperios, en forma percutánea (con una aguja de acupuntura) con el fin de generar, entre otros efectos: Analgesia, Regeneración del tejido y Normalización del pH local. Ideal para tendinopatías y desgarros, entre otros usos.</p>                        
+                    </div>
+                    
+                    <div class="servicio">
+                        <h4>Taping Neuromuscular</h4>
+                        <p>Vendaje funcional que comenzó siendo utilizado en el ámbito deportivo pero en los últimos años se popularizó y expandió al público en general para tratar diversas patologías y lesiones. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ajuste-columna container-krok">
+                    <!-- ==== IMAGEN KROK ==== -->
+                    <img class="krok" src="../public/img/krok.jpg" alt="krok">
+                </div>
+            </div>           
+        </main>    
     </div>      
         <!-- FOOTER -->        
         <footer class="bg-light">
@@ -138,4 +118,4 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
-</html>
+</html

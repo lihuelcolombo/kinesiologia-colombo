@@ -1,100 +1,83 @@
 // Page Servicios
-.grid-estructura {
-    display: grid;
-    grid-template-areas: 
-    "about about about"
-    "main main foto-krok"
-    "main main foto-krok"
-    ;
-    
- }
 
-.servicios-about {
-    grid-area: about;    
+.servicios-about {    
     @include about-spacing;
     p {
-        @include parrafos-about;
-        margin: 5px;
-        padding-top: 20px;
-        padding-right: 25px;
-       
+        @include parrafos-about;        
     }
-        
 }
-.servicios-grid-container {    
-    grid-area: main;
-    padding: 5px;
-    display: grid;
-    grid-template-areas: 
-    "s1 s2 foto-krok"
-    "s3 s4 foto-krok"
-    "s5 s6 foto-krok"
-    ;
-    row-gap: 15px;
-    div {
-        background-color: rgba(0, 0, 0, 0.014);
-        padding: 15px;      
-        @include photo-border;
-        margin: 10px 5px;
-        transition: all .35s ease-in-out;        
-        h4 {
+.servicios-container {
+    padding-bottom: 100px;  
+}
+
+.servicio {
+    @include photo-border;
+    transition: all .35s ease-in-out; 
+    margin: 10px 5px;
+    padding: 15px;  
+    min-height: 33%;
+    
+    h4 {
+        color: $color-primary;
+    }
+    p {
+        color: $color-primary;
+        a {
+            text-decoration: none;
             color: $color-primary;
+            font-weight: bold;  
         }
-        p {
-            color: $color-primary;
-            a {
-                text-decoration: none;
-                color: $color-primary;
-                font-weight: bold;  
-            }
-        }  
     }
-    div:hover {
+    &:hover {
         background-color: rgba(0, 0, 0, 0.247);
-    }
-    img {
-        @include photo-border; 
-        margin: 10px 50px;
-        height: auto;
-        width: 500px;           
-        grid-area: foto-krok;    
-        align-items: baseline;  
-    }
-}
-
-
-.servicio-1 {
-    grid-area: s1;
-    @include size;
+    }  
     
 }
-.servicio-2 {
-    grid-area: s2;
-    @include size;
 
-}
-.servicio-3 {
-    grid-area: s3;
-    @include size;
+.container-krok {
+    display: flex;    
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    img {
+        @include photo-border; 
+        margin: 10px 5px;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: space-between;
 
-}
-.servicio-4 {
-    grid-area: s4;
-    @include size;
-
-}
-.servicio-5 {
-    grid-area: s5;
-    @include size;
-
-}
-.servicio-6 {
-    grid-area: s6;
-    @include size;
-
+    }
 }
 
+.ajuste-columna{
+   min-height: 90vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   p {
+  
+   }
+}
 
+@media (max-width: 768px){
+    .ajuste-columna {
+        margin-bottom: 0px;
+        min-height: auto;
+    }
+    }
+    .servicio {
+        min-height: auto;
+    }
 
-
-
+    @media (max-width: 992){
+        .ajuste-columna {
+            margin-bottom: 0px;
+            min-height: auto;            
+    }
+    .servicio {
+        min-height: auto;
+        margin-bottom: 0px;
+    }
+}
+        

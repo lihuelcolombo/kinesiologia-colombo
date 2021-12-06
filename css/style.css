@@ -18,48 +18,30 @@ body {
   body h2 {
     color: #025197; }
 
-#logo-index {
-  width: 60px;
-  height: 120px;
-  padding: auto;
-  vertical-align: bottom; }
-
 .navbar-brand {
   transition: all .35s ease-in-out; }
   .navbar-brand:hover {
     transform: scale(1.2); }
 
 .navbar {
-  background-color: #cdeafd; }
+  background-color: #d7efff !important; }
 
-.nav-item a {
-  color: #025197 !important; }
-
-.navbar-botones li {
-  display: inline-block;
-  padding-left: 50px;
-  padding-right: 50px; }
-  .navbar-botones li a {
-    list-style-type: none;
-    color: #025197;
-    display: inline-block;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    text-transform: uppercase;
-    list-style-type: none;
-    transition: all .35s ease-in-out; }
-    .navbar-botones li a:hover {
-      transform: scale(1.2); }
+.nav-link {
+  color: #025197 !important;
+  margin-left: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all .35s ease-in-out; }
+  .nav-link:hover {
+    transform: scale(1.2); }
 
 footer {
   position: relative;
   bottom: 0;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  background-color: #d7efff !important; }
 
 .redes-sociales {
   display: flex;
@@ -95,20 +77,46 @@ footer {
 .banner {
   margin-left: 0px !important;
   padding-left: 0px !important; }
-  .banner img {
+  .banner .banner-hor {
     display: inline-block;
     overflow: hidden;
-    min-width: 100%;
+    min-width: 100% !important;
+    min-height: 80vh !important;
+    background-color: #d7efff;
     object-fit: cover; }
+  .banner .banner-vert {
+    display: none; }
+
+.main-index {
+  background-color: #d7efff; }
+
+@media (max-width: 768px) {
+  .banner {
+    height: max-content;
+    padding-bottom: 90px; }
+  .banner-hor {
+    display: none !important; }
+  .banner-vert {
+    display: inline-block !important;
+    height: 100%;
+    width: auto; } }
+
+@media (max-width: 992px) {
+  .banner {
+    height: max-content;
+    padding-bottom: 90px; }
+  .banner-hor {
+    display: none !important; }
+  .banner-vert {
+    display: inline-block !important;
+    height: auto;
+    width: 100%; } }
 
 .sobre-mi-container {
-  margin: 20px;
+  margin-top: 20px;
   height: 100%;
-  min-height: 80vh;
-  display: grid;
-  grid-template-areas: "titulo titulo foto" "texto texto foto"; }
+  min-height: 80vh; }
   .sobre-mi-container h1 {
-    grid-area: titulo;
     font-size: 4em;
     margin: 0px;
     text-align: center;
@@ -116,7 +124,6 @@ footer {
     justify-content: center;
     align-items: center; }
   .sobre-mi-container p {
-    grid-area: texto;
     font-size: 1.8em;
     margin: 5px;
     padding-right: 25px;
@@ -128,8 +135,7 @@ footer {
 .foto4x4 {
   display: flex;
   justify-content: center;
-  align-items: center;
-  grid-area: foto; }
+  align-items: center; }
   .foto4x4 img {
     max-width: 400px;
     max-height: 400px;
@@ -137,88 +143,78 @@ footer {
     border-radius: 50%;
     border: solid 6px #d7efff; }
 
-.grid-estructura {
-  display: grid;
-  grid-template-areas: "about about about" "main main foto-krok" "main main foto-krok"; }
+@media (max-width: 768px) {
+  .foto4x4 img {
+    max-width: 90%;
+    max-height: 90%; }
+  .sobre-mi-container {
+    margin-bottom: 100px; }
+    .sobre-mi-container p {
+      font-size: 1.2em; } }
 
 .servicios-about {
-  grid-area: about;
-  margin: 20px; }
+  margin-top: 20px; }
   .servicios-about p {
     color: #025197;
     font-size: 1.7em;
     text-align: justify;
     font-style: italic;
-    padding-top: 20px;
-    margin: 5px;
-    padding-top: 20px;
-    padding-right: 25px; }
+    padding-top: 20px; }
 
-.servicios-grid-container {
-  grid-area: main;
-  padding: 5px;
-  display: grid;
-  grid-template-areas: "s1 s2 foto-krok" "s3 s4 foto-krok" "s5 s6 foto-krok";
-  row-gap: 15px; }
-  .servicios-grid-container div {
-    background-color: rgba(0, 0, 0, 0.014);
-    padding: 15px;
+.servicios-container {
+  padding-bottom: 100px; }
+
+.servicio {
+  border: solid 6px #d7efff;
+  transition: all .35s ease-in-out;
+  margin: 10px 5px;
+  padding: 15px;
+  min-height: 33%; }
+  .servicio h4 {
+    color: #025197; }
+  .servicio p {
+    color: #025197; }
+    .servicio p a {
+      text-decoration: none;
+      color: #025197;
+      font-weight: bold; }
+  .servicio:hover {
+    background-color: rgba(0, 0, 0, 0.247); }
+
+.container-krok {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between; }
+  .container-krok img {
     border: solid 6px #d7efff;
     margin: 10px 5px;
-    transition: all .35s ease-in-out; }
-    .servicios-grid-container div h4 {
-      color: #025197; }
-    .servicios-grid-container div p {
-      color: #025197; }
-      .servicios-grid-container div p a {
-        text-decoration: none;
-        color: #025197;
-        font-weight: bold; }
-  .servicios-grid-container div:hover {
-    background-color: rgba(0, 0, 0, 0.247); }
-  .servicios-grid-container img {
-    border: solid 6px #d7efff;
-    margin: 10px 50px;
+    width: 100%;
     height: auto;
-    width: 500px;
-    grid-area: foto-krok;
-    align-items: baseline; }
+    align-items: center;
+    justify-content: space-between; }
 
-.servicio-1 {
-  grid-area: s1;
-  padding: 5px;
-  margin: 5px;
-  border: 20px; }
+.ajuste-columna {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
 
-.servicio-2 {
-  grid-area: s2;
-  padding: 5px;
-  margin: 5px;
-  border: 20px; }
+@media (max-width: 768px) {
+  .ajuste-columna {
+    margin-bottom: 0px;
+    min-height: auto; } }
 
-.servicio-3 {
-  grid-area: s3;
-  padding: 5px;
-  margin: 5px;
-  border: 20px; }
+.servicio {
+  min-height: auto; }
 
-.servicio-4 {
-  grid-area: s4;
-  padding: 5px;
-  margin: 5px;
-  border: 20px; }
-
-.servicio-5 {
-  grid-area: s5;
-  padding: 5px;
-  margin: 5px;
-  border: 20px; }
-
-.servicio-6 {
-  grid-area: s6;
-  padding: 5px;
-  margin: 5px;
-  border: 20px; }
+@media (max-width: 992) {
+  .ajuste-columna {
+    margin-bottom: 0px;
+    min-height: auto; }
+  .servicio {
+    min-height: auto;
+    margin-bottom: 0px; } }
 
 .ubicacion-container {
   display: grid;
@@ -233,7 +229,7 @@ footer {
     color: #025197; }
 
 .ubicacion-about {
-  margin: 20px;
+  margin-top: 20px;
   grid-area: texto; }
   .ubicacion-about p {
     color: #025197;
@@ -286,7 +282,7 @@ footer {
   align-items: center; }
 
 .contacto-about {
-  margin: 20px; }
+  margin-top: 20px; }
   .contacto-about p {
     color: #025197;
     font-size: 1.7em;
@@ -308,10 +304,4 @@ footer {
 /* Media Queries */
 @media (max-width: 768px) {
   footer {
-    position: fixed; }
-  .krok {
-    display: none; }
-  .ubicacion-san-miguel {
-    display: none; }
-  .ubicacion-florida {
-    display: none; } }
+    position: fixed; } }
