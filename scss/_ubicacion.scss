@@ -41,6 +41,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    iframe {
+        width: 100%;
+        padding: 0px 4px;
+    }
 }
 
 .contenedor-florida {    
@@ -61,6 +65,10 @@
     display: flex;
     justify-content: center;
     align-items: center;    
+    iframe {
+        width: 100%;
+        padding: 0px 4px;
+    }
 }
 
 @media (max-width: 768){

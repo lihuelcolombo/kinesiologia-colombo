@@ -39,6 +39,7 @@
     align-items: center;
     align-content: center;
     justify-content: space-between;
+    padding: 0px 16px;
     img {
         @include photo-border; 
         margin: 10px 5px;

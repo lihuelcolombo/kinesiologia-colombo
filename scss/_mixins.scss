@@ -1,20 +1,22 @@
 // Mixins
-@mixin size {
-    padding: 5px;
-    margin: 5px;
-    border: 20px;    
+
+// Espaciado h1
+@mixin h1-spacing {
+    margin-top: 20px;
 }
+
+
 // Espaciados de titulo y párrafo
 @mixin about-spacing {
-    margin-top: 20px;   
+    margin-top: 80px;   
 }
 // Parrafos bajo el título h1
 @mixin parrafos-about {
     color: $color-primary;    
     font-size: 1.7em;
     text-align: justify;
-    font-style: italic;
-    padding-top: 20px;    
+    font-style: normal;
+    padding-top: 40px;    
 }
 
 // Bordes de img 

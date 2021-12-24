@@ -9,6 +9,7 @@ body { font-family: 'Montserrat', sans-serif;
     padding: 0px;
     box-sizing: border-box;
     h1 {
+        font-family: 'Josefin Sans', sans-serif;
         color: $color-primary;
         margin: 0px;
         font-size: 4em;
@@ -16,6 +17,7 @@ body { font-family: 'Montserrat', sans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
+        text-transform: uppercase;
     } 
     h2 {
         color: $color-primary;
